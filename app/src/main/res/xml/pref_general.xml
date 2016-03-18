@@ -21,11 +21,19 @@
         android:capitalize="words"
         android:defaultValue="94043"
         android:inputType="textCapWords"
-        android:key="location"
+        android:key="@string/pref_location_key"
         android:maxLines="1"
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:title="Location" />
+    <ListPreference
+        android:defaultValue="@string/pref_units_imperial"
+        android:entries="@array/pref_units_values"
+        android:entryValues="@array/pref_units_options"
+        android:key="@string/pref_units_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_unit_change" />
     <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
          dismiss it. -->
     <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
